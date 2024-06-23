@@ -233,8 +233,8 @@ Ubuntu 22.04.4 LTS | rustc 1.79.0 (129f3b996 2024-06-10) | cargo 1.79.0 (ffa9cf9
 [vscode-url]: https://code.visualstudio.com/docs/?dv=linux64_deb
 [make-badge]: https://img.shields.io/badge/_-MAKEFILE-427819.svg?style=for-the-badge
 [make-url]: https://www.gnu.org/software/make/manual/make.html
-[java-badge]: https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white
-[java-url]: https://www.rust-lang.org/learn
+[rust-badge]: https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white
+[rust-url]: https://www.rust-lang.org/learn
 [trabalho-url]: https://drive.google.com/file/d/1m3pVwTmCQPWp7HDzCqwcy_aB0x4A3yIx/view?usp=sharing
 [github-prof]: https://github.com/mpiress
 [medias-ref]: output/csv/medias.csv
