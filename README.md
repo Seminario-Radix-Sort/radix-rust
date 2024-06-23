@@ -136,17 +136,21 @@ Inicialmente, algumas considerações importantes sobre como se deve preparar o 
 Considerando um ambiente _shell_, garanta que os seguintes comandos já foram executados:
   - Atualize os pacotes antes da instalação dos compiladores:
   ```console
-  sudo apt-get update
+  sudo apt update
   ```
-  - Instale o JDK mais recente:
+  - Instale o `curl` para facilitar a instalação do compilador da linguagem `Rust`: 
   ```console
-  sudo apt install default-jdk
+  sudo apt install curl
   ```
-  - Opcionalmente, instale o JRE individualmente, sem ferramentas extras incluídas na JDK:
+  - Instale o compilador mais recente:
   ```console
-  sudo apt install default-jre
+  curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
   ```
-  - Se necessário, configure a variável JAVA_HOME. Para tal, siga as instruções no [link][java-tutorial].
+  - Cheque as versões do compilador `rustc` e do gerenciador de pacotes `cargo` de acordo com [🧪 Ambiente de Compilação e Execução](#-Ambiente-de-Compilação-e-Execução), com os comandos:
+  ```console
+  rustc --version
+  cargo --version
+  ```
 
 ### Instalando
 
