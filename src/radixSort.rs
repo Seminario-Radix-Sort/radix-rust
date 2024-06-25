@@ -1,6 +1,5 @@
 use chrono;
 use crate::arquivos;
-use rdxsort::*;
 
 #[allow(non_snake_case)]
 pub fn calcularTabelaSaidaRadix(tamanhos: Vec<i32>, tabelaSaida: &mut String) {
