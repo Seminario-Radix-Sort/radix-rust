@@ -142,7 +142,7 @@ Considerando um ambiente _shell_, garanta que os seguintes comandos já foram ex
   ```console
   sudo apt install curl
   ```
-  - Instale o compilador mais recente:
+  - Instale o [compilador Rust](https://www.rust-lang.org/tools/install) mais recente:
   ```console
   curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
   ```
@@ -156,7 +156,7 @@ Considerando um ambiente _shell_, garanta que os seguintes comandos já foram ex
 
 Com o ambiente preparado, os seguintes passos são para a instalação, compilação e execução do programa localmente:
 
-1. Clone o repositório no diretório desejado e acesse a pasta src/:
+1. Clone o repositório no diretório desejado:
   ```console
   git clone https://github.com/Seminario-Radix-Sort/radix-rust.git
   cd radix-rust
