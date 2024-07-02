@@ -20,7 +20,7 @@ pub fn leituraArquivo(vetor: &mut Vec<u64>, nomeArquivo: &mut String){
 #[allow(non_snake_case)]
 pub fn escritaArquivo(nomeArquivo: &mut String, tabelaSaida: &mut String){
     let dt = Local::now();
-    let dataFormatada = dt.format("%d-%m-%Y-%H:%M:%S").to_string();
+    let dataFormatada = dt.format("%d-%m-%Y-%H-%M-%S").to_string();
 
     nomeArquivo.push('-');
     nomeArquivo.push_str(&dataFormatada);
