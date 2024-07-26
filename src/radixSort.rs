@@ -1,5 +1,5 @@
-use chrono;
 use crate::arquivos;
+use std::time::Instant;
 
 #[allow(non_snake_case)]
 pub fn calcularTabelaSaidaRadix(tamanhos: Vec<i32>, tabelaSaida: &mut String) {
@@ -28,10 +28,9 @@ pub fn calcularTabelaSaidaRadix(tamanhos: Vec<i32>, tabelaSaida: &mut String) {
 
                 for _ in 0..10 {
                     let mut vetorCopia = vetor.clone();
-                    let inicio = chrono::Utc::now();
+                    let inicio = Instant::now();
                     radixSort(&mut vetorCopia);
-                    let fim = chrono::Utc::now();
-                    let tempo = (fim - inicio).num_microseconds().unwrap() as f64 / 1_000_000.0;
+                    let tempo = inicio.elapsed().as_secs_f64();
                     tempoTotal += tempo as f64;
                     tempoMedio += tempo as f64;
                 }

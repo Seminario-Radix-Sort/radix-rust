@@ -110,6 +110,72 @@ Algoritmos e Estruturas de Dados I
 
 <div  align="justify">
 
+dev
+```toml
+[profile.dev]
+opt-level = 0
+debug = true
+split-debuginfo = '...'  # Platform-specific.
+strip = "none"
+debug-assertions = true
+overflow-checks = true
+lto = false
+panic = 'unwind'
+incremental = true
+codegen-units = 256
+rpath = false
+```
+
+release
+```toml
+[profile.release]
+opt-level = 3
+debug = false
+split-debuginfo = '...'  # Platform-specific.
+strip = "none"
+debug-assertions = false
+overflow-checks = false
+lto = false
+panic = 'unwind'
+incremental = false
+codegen-units = 16
+rpath = false
+```
+
+TesteRadix1
+```toml
+[profile.testeRadix]
+opt-level = 0
+debug = false
+split-debuginfo = '...'
+strip = "none"
+debug-assertions = true
+overflow-checks = true
+lto = false
+panic = 'unwind'
+incremental = true
+codegen-units = 256
+rpath = false
+inherits = 'dev'
+```
+
+TesteRadix2
+```toml
+[profile.testeRadix]
+opt-level = 0
+debug = false
+split-debuginfo = '...'
+strip = "none"
+debug-assertions = false
+overflow-checks = false
+lto = false
+panic = 'unwind'
+incremental = false
+codegen-units = 16
+rpath = false
+inherits = 'dev'
+```
+
 </div>
 
 <p align="right">(<a href="#readme-topo">voltar ao topo</a>)</p>

@@ -6,3 +6,17 @@ edition = "2021"
 [dependencies]
 chrono = "0.4.38"
 rdxsort = "0.3.0"
+
+[profile.testeRadix]
+opt-level = 0
+debug = false
+split-debuginfo = '...'
+strip = "none"
+debug-assertions = false
+overflow-checks = false
+lto = false
+panic = 'unwind'
+incremental = false
+codegen-units = 16
+rpath = false
+inherits = 'dev'
